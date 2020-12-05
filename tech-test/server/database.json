@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "description": "Clean my kitchen",
+      "label": "Kitchen Clean up",
+      "category": "House",
+      "done": true,
+      "completedDate": "Sat Dec 05 2020 09:02:51 GMT+0000 (Greenwich Mean Time)",
+      "id": 1
+    },
+    {
+      "description": "Start doing my taxes",
+      "label": "Taxes",
+      "category": "Bureaucracy",
+      "done": false,
+      "completedDate": null,
+      "id": 2
+    },
+    {
+      "description": "Start Christmas prep",
+      "label": "Decoration",
+      "category": "House",
+      "done": false,
+      "completedDate": null,
+      "id": 3
+    },
+    {
+      "description": "Cook meal",
+      "label": "Meal",
+      "category": "Food",
+      "done": false,
+      "completedDate": null,
+      "id": 4
+    },
+    {
+      "description": "Tea time with Ann",
+      "label": "Meeting",
+      "category": "Free Time",
+      "done": false,
+      "completedDate": null,
+      "id": 5
+    }
+  ]
+}

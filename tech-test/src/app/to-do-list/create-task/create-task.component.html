@@ -1,0 +1,23 @@
+<div class="createTask">
+  <form [formGroup]="toDoForm" (ngSubmit)="submitForm()">
+    <mat-form-field class="taskForm">
+      <mat-label>Task Description</mat-label>
+      <input
+        matInput
+        placeholder="Ex. Cleaning Kitchen"
+        formControlName="description"
+      />
+    </mat-form-field>
+    <mat-form-field class="taskForm">
+      <mat-label>Task Label</mat-label>
+      <input matInput placeholder="Ex. Cleaning" formControlName="label" />
+    </mat-form-field>
+    <mat-form-field class="taskForm">
+      <mat-label>Category</mat-label>
+      <input matInput placeholder="Ex. House" formControlName="category" />
+    </mat-form-field>
+    <mat-card-actions
+      ><button mat-raised-button color="primary">Save</button></mat-card-actions
+    >
+  </form>
+</div>

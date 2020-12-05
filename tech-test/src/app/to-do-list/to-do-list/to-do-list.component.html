@@ -1,0 +1,27 @@
+<div class="task">
+  <app-create-task (submittedTask)="addItem($event)"></app-create-task>
+  <app-filter-tasks
+    (filteredAll)="filterAll()"
+    (filteredRemaining)="filterRemained()"
+  ></app-filter-tasks>
+  <mat-list>
+    <mat-list-item disableRipple="false" *ngFor="let task of tasks">
+      <mat-checkbox
+        color="primary"
+        [(ngModel)]="task.done"
+        (change)="updateStatus(task)"
+        mat-list-icon
+      ></mat-checkbox>
+      <h3 matLine class="label">{{ task.label }}</h3>
+      <p [class.taskComplete]="task.done" mat-line>
+        <span>{{ task.category }}</span>
+        <span class="category"> -- {{ task.description }}</span>
+      </p>
+
+      <button (click)="removeTask(task)" mat-icon-button>
+        <mat-icon>delete_forever</mat-icon>
+      </button>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
+</div>
